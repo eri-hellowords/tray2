@@ -18,6 +18,12 @@
 #include <QVBoxLayout>
 #include <QMessageBox>
 
+
+
+
+
+/*
+
 //! [0]
 Window::Window()
 {
@@ -33,7 +39,6 @@ Window::Window()
     connect(trayIcon, &QSystemTrayIcon::activated, this, &Window::iconActivated);
 
     QVBoxLayout *mainLayout = new QVBoxLayout;
-    mainLayout->addWidget(iconGroupBox);
     mainLayout->addWidget(messageGroupBox);
     setLayout(mainLayout);
 
@@ -188,5 +193,7 @@ void Window::createTrayIcon()
     trayIcon = new QSystemTrayIcon(this);
     trayIcon->setContextMenu(trayIconMenu);
 }
+
+*/
 
 #endif

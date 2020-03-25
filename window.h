@@ -45,10 +45,6 @@ private:
     void createActions();
     void createTrayIcon();
 
-    QGroupBox *iconGroupBox;
-    QLabel *iconLabel;
-    QComboBox *iconComboBox;
-    QCheckBox *showIconCheckBox;
 
     QGroupBox *messageGroupBox;
     QLabel *typeLabel;
@@ -69,6 +65,9 @@ private:
 
     QSystemTrayIcon *trayIcon;
     QMenu *trayIconMenu;
+
+    QString url;
+    QString message;
 };
 //! [0]
 

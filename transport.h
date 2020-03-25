@@ -10,7 +10,6 @@ class Transport : public QObject
     Q_OBJECT
 public:
     explicit Transport(QObject *parent = nullptr);
-    void Ping();
     void setServer(QHostAddress address);
 
 private slots:
@@ -18,6 +17,7 @@ private slots:
 
 signals:
 private:
+    void Ping();
     QUdpSocket *socket;
     QHostAddress remote = QHostAddress::LocalHost;
     QTimer *timer;
